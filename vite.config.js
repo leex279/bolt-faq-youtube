@@ -3,10 +3,10 @@ import path from 'path';
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
-  const isProduction = env.NODE_ENV === 'production';
+  const isDevMode = env.VITE_DEV_MODE === 'true';
 
   return {
-    base: isProduction ? '/bolt-faq-youtube/' : '/',
+    base: isDevMode ? '/' : '/bolt-faq-youtube/',
     resolve: {
       alias: {
         '@': path.resolve(__dirname, './src'),

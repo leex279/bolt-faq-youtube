@@ -15,5 +15,13 @@ export default defineConfig(({ mode }) => {
     server: {
       base: '/',
     },
+    build: {
+      rollupOptions: {
+        input: {
+          main: path.resolve(__dirname, 'index.html'),
+          commands: path.resolve(__dirname, 'commands.html'),
+        },
+      },
+    },
   };
 });

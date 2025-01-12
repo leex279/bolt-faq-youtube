@@ -14,6 +14,8 @@ function updateContent(lang) {
     const commandHeaders = document.querySelectorAll('.command-header');
     const copyButtons = document.querySelectorAll('.copy-button');
     const commandSnippets = document.querySelectorAll('.command-snippet pre code');
+    const formLabels = document.querySelectorAll('.contact-form label');
+    const formButton = document.querySelector('.contact-form button');
 
     if (accordionHeaders) {
         accordionHeaders.forEach(header => {
@@ -37,6 +39,14 @@ function updateContent(lang) {
         commandSnippets.forEach(snippet => {
             snippet.textContent = snippet.getAttribute(`data-${lang}`);
         });
+    }
+    if (formLabels) {
+        formLabels.forEach(label => {
+            label.textContent = label.getAttribute(`data-${lang}`);
+        });
+    }
+    if (formButton) {
+        formButton.textContent = formButton.getAttribute(`data-${lang}`);
     }
 }
 

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commands - bolt.diy</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" type="module" defer></script>
+    <meta http-equiv="Permissions-Policy" content="clipboard-write=(self), clipboard-read=(self)">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                 <a href="/index.html">bolt.diy</a>
+            </div>
+            <div class="nav-links">
+                <a href="/commands.html" class="active">Commands</a>
+            </div>
+            <div class="language-toggle">
+                <i class="ph-globe"></i>
+                <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="de">German</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="commands-section">
+            <h1>Command Snippets</h1>
+            <div class="command-list">
+                <div class="command-item">
+                    <div class="command-header" data-en="Test API Endpoint 1" data-de="Test API Endpunkt 1">
+                        <span class="command-title">Test API Endpoint 1</span>
+                    </div>
+                    <div class="command-snippet">
+                        <pre><code data-en="curl -X GET https://api.example.com/endpoint1" data-de="curl -X GET https://api.example.com/endpoint1">curl -X GET https://api.example.com/endpoint1</code></pre>
+                        <button class="copy-button" data-en="Copy" data-de="Kopieren"><i class="ph-copy"></i> Copy</button>
+                    </div>
+                </div>
+                <div class="command-item">
+                    <div class="command-header" data-en="Test API Endpoint 2" data-de="Test API Endpunkt 2">
+                        <span class="command-title">Test API Endpoint 2</span>
+                    </div>
+                    <div class="command-snippet">
+                        <pre><code data-en="curl -X POST -H 'Content-Type: application/json' -d '{\&quot;key\&quot;:\&quot;value\&quot;}' https://api.example.com/endpoint2" data-de="curl -X POST -H 'Content-Type: application/json' -d '{\&quot;key\&quot;:\&quot;value\&quot;}' https://api.example.com/endpoint2">curl -X POST -H 'Content-Type: application/json' -d '{"key":"value"}' https://api.example.com/endpoint2</code></pre>
+                        <button class="copy-button" data-en="Copy" data-de="Kopieren"><i class="ph-copy"></i> Copy</button>
+                    </div>
+                </div>
+                 <div class="command-item">
+                    <div class="command-header" data-en="Test API Endpoint 3" data-de="Test API Endpunkt 3">
+                        <span class="command-title">Test API Endpoint 3</span>
+                    </div>
+                    <div class="command-snippet">
+                        <pre><code data-en="curl -X PUT -H 'Content-Type: application/json' -d '{\&quot;key\&quot;:\&quot;newvalue\&quot;}' https://api.example.com/endpoint3/123" data-de="curl -X PUT -H 'Content-Type: application/json' -d '{\&quot;key\&quot;:\&quot;newvalue\&quot;}' https://api.example.com/endpoint3/123">curl -X PUT -H 'Content-Type: application/json' -d '{"key":"newvalue"}' https://api.example.com/endpoint3/123</code></pre>
+                        <button class="copy-button" data-en="Copy" data-de="Kopieren"><i class="ph-copy"></i> Copy</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="theme-toggle">
+            <i class="ph-moon"></i>
+            <i class="ph-sun"></i>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "faq-page",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "setup-env": "node -e \"require('fs').writeFileSync('.env', 'VITE_DEV_MODE=true')\""
+  },
+  "devDependencies": {
+    "vite": "^4.4.9"
+  },
+  "dependencies": {
+    "phosphor-icons": "^1.4.2"
+  }
+}
